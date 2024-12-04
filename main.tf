@@ -9,7 +9,9 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
-  region = "us-east-1"
+  region     = "us-east-1"
+  access_key = "" # AWS account rajesh_rajendiran
+  secret_key = "" # AWS account rajesh_rajendiran
 }
 
 # Configure the AWS S3 under rajesh_rajendiran
