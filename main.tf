@@ -36,10 +36,10 @@ resource "aws_vpc" "Vpc_Terraform" {
 
 # Configure the AWS VPC Subnet 
 resource "aws_subnet" "VPc_Pub_Subnet_Terraform" {
-  vpc_id                  = aws_vpc.Vpc_Terraform.id
-  cidr_block              = "10.0.1.0/24"
-  availability_zone       = "us-east-1a"
-  map_public_ip_on_launch = "true"
+  vpc_id            = aws_vpc.Vpc_Terraform.id
+  cidr_block        = "10.0.1.0/24"
+  availability_zone = "us-east-1a"
+  # map_public_ip_on_launch = "true"
 
   tags = {
     Name = "VPc_Pub_Subnet_Terraform"
